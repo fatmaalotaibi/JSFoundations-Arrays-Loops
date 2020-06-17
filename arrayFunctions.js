@@ -34,7 +34,7 @@ function getOdds(numbers) {
 function getEvens(numbers) {
   // Your code here
   let evenArray = [];
-
+  {
   for (i = 1; i < numbers.length; i++) {
     if (numbers[i] / 2 === numbers[0]) {
       evenArray.push = numbers[i];
@@ -79,7 +79,7 @@ function getDuplicateCount(x, numbers) {
  */
 function youGottaCalmDown(s) {
   // Your code here
-  while (s.endWith("!!")) s.slice(0, -1);
+  while (s.EndWith("!!")) s.slice(0, -1);
   return s;
 }
 
