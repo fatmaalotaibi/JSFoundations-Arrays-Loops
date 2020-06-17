@@ -10,6 +10,15 @@
  */
 function getOdds(numbers) {
   // Your code here
+
+  let oddArray = [];
+
+  for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === numbers[0]) {
+      oddArray.push = numbers[i];
+    }
+  }
+  return oddArray;
 }
 
 /**
@@ -24,6 +33,14 @@ function getOdds(numbers) {
  */
 function getEvens(numbers) {
   // Your code here
+  let evenArray = [];
+
+  for (i = 1; i < numbers.length; i++) {
+    if (numbers[i] / 2 === numbers[0]) {
+      evenArray.push = numbers[i];
+    }
+  }
+  return evenArray;
 }
 
 /**
@@ -37,6 +54,13 @@ function getEvens(numbers) {
  */
 function getDuplicateCount(x, numbers) {
   // Your code here
+  let count = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === count++) {
+    }
+  }
+  return count;
 }
 
 /**
@@ -55,6 +79,8 @@ function getDuplicateCount(x, numbers) {
  */
 function youGottaCalmDown(s) {
   // Your code here
+  while (s.endWith("!!")) s.slice(0, -1);
+  return s;
 }
 
 module.exports = { getOdds, getEvens, getDuplicateCount, youGottaCalmDown };
